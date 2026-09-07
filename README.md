@@ -30,11 +30,11 @@ The full DAG spans two logical zones — **ingestion & modeling** on the left, a
 
 ### 1️⃣ Ingestion → Joins → One Big Table (OBT)
 
-![Ingestion, Joins and OBT](/Snap1.png)
+![Ingestion, Joins and OBT](./Snap2.png)
 
 ### 2️⃣ Analytics Branches: City Sales · Monthly Order Status · Review Sentiment
 
-![Aggregations, Sort and AI Sentiment branches](/Snap2.png)
+![Aggregations, Sort and AI Sentiment branches](./Snap1.png)
 
 ```mermaid
 flowchart LR
