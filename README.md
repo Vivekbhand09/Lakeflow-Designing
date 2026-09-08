@@ -36,6 +36,10 @@ The full DAG spans two logical zones — **ingestion & modeling** on the left, a
 
 ![Aggregations, Sort and AI Sentiment branches](./utils/Snap2.png)
 
+---
+🗺️ Complete View 
+
+![Ingestion, Joins and OBT](./utils/Snap1.png)
 
 ---
 
