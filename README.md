@@ -183,8 +183,8 @@ Together, these steps reflect a solid, practical grasp of **modern Databricks La
 
 | Snapshot | Shows |
 |---|---|
-| `assets/pipeline-part2.png` | Sources (`orders`, `order_items`) → API ingestion (`API_Customers`, `API_Shipments`) → sequential joins → OBT → start of the aggregation branch |
-| `assets/pipeline-part1.png` | The three parallel output branches: City aggregation & sort, Monthly order-status aggregation & sort, and the Reviews → AI Sentiment → output chain |
+| `utils/snap1.png` | Sources (`orders`, `order_items`) → API ingestion (`API_Customers`, `API_Shipments`) → sequential joins → OBT → start of the aggregation branch |
+| `utils/snap2.png` | The three parallel output branches: City aggregation & sort, Monthly order-status aggregation & sort, and the Reviews → AI Sentiment → output chain |
 
 ---
 
