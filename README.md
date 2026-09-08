@@ -34,7 +34,7 @@ The full DAG spans two logical zones — **ingestion & modeling** on the left, a
 
 ### 2️⃣ Analytics Branches: City Sales · Monthly Order Status · Review Sentiment
 
-![Aggregations, Sort and AI Sentiment branches](./utils/Snap1.png)
+![Aggregations, Sort and AI Sentiment branches](./utils/Snap2.png)
 
 ```mermaid
 flowchart LR
