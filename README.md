@@ -39,9 +39,9 @@ The full DAG spans two logical zones — **ingestion & modeling** on the left, a
 ---
 🗺️ Complete View 
 
-![Ingestion, Joins and OBT](./utils/Snap3.png)
+![Ingestion, Joins and OBT](./utils/snap3.png)
 
-![Ingestion, Joins and OBT](./utils/Snap4.png)
+![Ingestion, Joins and OBT](./utils/snap4.png)
 
 ---
 
