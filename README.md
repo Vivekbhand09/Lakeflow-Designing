@@ -36,34 +36,6 @@ The full DAG spans two logical zones — **ingestion & modeling** on the left, a
 
 ![Aggregations, Sort and AI Sentiment branches](./utils/Snap2.png)
 
-```mermaid
-flowchart LR
-    subgraph Sources
-        A[orders\nDelta Table]
-        B[order_items\nDelta Table]
-        C[API_Customers\nPython + REST CSV]
-        D[API_Shipments\nPython + REST CSV]
-    end
-
-    A --> J1[OrdersJoinOrdersItems\nLEFT JOIN on order_id]
-    B --> J1
-    J1 --> J2[OrderItemsJoinCustomers\nLEFT JOIN on customer_id]
-    C --> J2
-    J2 --> OBT[OBT\nLEFT JOIN on order_id]
-    D --> OBT
-
-    OBT --> AGG1[OrdersByCity\nCOUNT + SUM]
-    AGG1 --> SORT1[Sorted\nDESC by TotalAmount]
-    SORT1 --> OUT1[(AggregatedOrders\nworkspace.enr)]
-
-    OBT --> PREP[ExtractOrderMonth\nMONTH(order_date)]
-    PREP --> AGG2[CountStatusPerMonth\nGROUP BY month, status]
-    AGG2 --> SORT2[SortByOrderMonthDesc]
-    SORT2 --> OUT2[(OrderStatus\nworkspace.enr)]
-
-    E[Reviews_API\nPython + REST CSV\n+ data cleansing] --> SENT[Sentiment\nai_analyze_sentiment]
-    SENT --> OUT3[(Sentiment\nworkspace.enr)]
-```
 
 ---
 
